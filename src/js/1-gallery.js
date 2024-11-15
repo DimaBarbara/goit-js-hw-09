@@ -80,3 +80,9 @@ const markup = images.map((image) => `
 `).join("");
 gallery.insertAdjacentHTML("beforeend", markup);
 
+const lightbox = new SimpleLightbox('.gallery a', {
+	captions: true,
+	captionsData: true,
+	captionPosition: 'bottom',
+	captionDelay: 250,
+});
